@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>懂得</title>
+	<link rel="stylesheet" href="css/followme.css">
+</head>
+<body>
+	<div class="container">
+		<div class="show_img">
+			<img src="img/13.jpg" class="view" alt="">
+			<img src="img/uparrow.jpg" class="arrow up"></img>
+			<img src="img/downarrow.jpg" class="arrow down"></img>
+			<img src="img/leftarrow.jpg" class="arrow left"></img>
+			<img src="img/rightarrow.jpg" class="arrow right"></img>
+		</div>
+		<div class="tools">
+			<div class="turnLeftBtn btn">向左转</div>
+			<div class="turnRightBtn btn">向右转</div>
+			<div class="turnBackBtn btn">向后转</div>
+		</div>
+		<div class="navigator">
+			<ul class="map clear_rx">
+				<li>
+					<div class="pos_rx link uplink"></div>
+					<div class="pos_rx link rightlink"></div>
+					<div class="pos_rx link downlink"></div>
+					<div class="pos_rx link leftlink"></div>
+				</li>
+				<li>
+					<div class="pos_rx link leftlink"></div>
+				</li>
+				<li></li>
+				<li>
+					<div class="pos_rx link uplink"></div>
+				</li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/followme.js"></script>
+	<script>
+	$().ready(function(){
+		Followme();
+	});
+	</script>
+</body>
+</html>

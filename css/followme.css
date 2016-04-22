@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/*样式重置,根据自己的网站量身订做,有就加,没有就不用加上去*/
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,form,input,textarea,th,td,select{margin:0;padding:0;}
+em{font-style:normal;}
+li{list-style:none;}
+a{text-decoration:none;color: #000;}
+img{border:none;vertical-align:top;}/*将img放到a中会有border,给它去掉,同时对齐*/
+table{border-collapse:collapse;}/*表格之间有间隙,合并掉*/
+input,textarea{outline:none;}/*在chrome下如果选中的时候,会自动有个高亮的动作,将其去掉*/
+textarea{resize:none;overflow:auto;}
+body{font-size:12px;font-family:"微软雅黑";}/*具体看自己的网站是怎么要求的*/
+
+.clear_rx{zoom:1;} .clear_rx:after{content:"";display: block;clear: both;}
+.fl_rx{float: left;}
+.fr_rx{float: right;}
+.pos_rx{position: absolute;}
+
+.container{position: relative;}
+.show_img{width: 500px;height: 500px; margin: 0 auto;overflow: hidden;border: 1px solid orange;position: relative;}
+.show_img .view{width: 500px;height: auto;}
+.show_img .tmp111{position: absolute;}
+.arrow{position: absolute;width: 90px;height: auto;cursor: pointer;display: none;}
+.up{top:20px;left: 210px;}
+.down{top:420px;left: 210px;}
+.left{top:220px;left: 10px;}
+.right{top:220px;left: 370px;}
+
+.map{width: 200px;}
+.map li{float: left;width: 40px;height: 40px;background: #77ee54;margin: 10px;border-radius: 50%;position: relative;}
+.map li .link{z-index: 3;background: #12dd4d;}
+.map li .uplink{width: 4px;height: 10px;top: -10px;left: 50%;margin-left: -2px;}
+.map li .downlink{width: 4px;height: 10px;bottom: -10px;left: 50%;margin-left: -2px;}
+.map li .leftlink{width: 10px;height: 4px;left: -10px;top: 50%;margin-top: -2px;}
+.map li .rightlink{width: 10px;height: 4px;right: -10px;top: 50%;margin-top: -2px;}
+
+.btn{cursor: pointer;height: 26px;width: 80px;line-height: 26px;text-align: center;background: #34fa7a;}
+.btn:hover{background: #d5678f;color: #fff;}
